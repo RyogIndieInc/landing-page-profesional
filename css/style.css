@@ -84,3 +84,31 @@ p, li {
     cursor: pointer;
     z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #1f4287;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
