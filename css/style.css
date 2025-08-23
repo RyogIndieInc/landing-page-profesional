@@ -45,6 +45,7 @@ p, li {
     display: flex;
     justify-content: center;
     gap: 20px; /* Para añadir espacio entre los elementos */
+    flex-wrap: wrap; /* Asegura que los elementos pasen a la siguiente línea */
 }
 
 .proyectos-contenedor {
@@ -57,18 +58,6 @@ p, li {
     width: 300px;
     margin: 15px;
     text-align: center;
-}
-
-@media (max-width: 600px) {
-    body {
-        font-size: 14px;
-    }
-
-    /* Estilos para pantallas de 600px o menos, la lista se muestra como una columna */
-    .lista-habilidades {
-        flex-direction: column; /* Cambia el eje principal a vertical */
-        align-items: center; /* Centra los elementos */
-    }
 }
 
 #scroll-to-top {
@@ -111,4 +100,32 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
+}
+
+/* Estilos para cada elemento de la lista */
+.habilidad-item {
+    background-color: #ffffff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra sutil */
+    text-align: center;
+    flex-grow: 1; /* Permite que cada elemento crezca */
+    flex-basis: 150px; /* Le da un tamaño base de 150px */
+    flex-shrink: 1; /* Permite que los elementos se encojan si no caben */
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    /* Estilos para pantallas de 600px o menos, la lista se muestra como una columna */
+    .lista-habilidades {
+        flex-direction: column; /* Cambia el eje principal a vertical */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .habilidad-item {
+        flex-basis: 100%; /* En pantallas pequeñas, cada elemento ocupa todo el ancho */
+    }
 }
