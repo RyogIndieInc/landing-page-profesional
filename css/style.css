@@ -34,4 +34,12 @@ p, li {
 
 .proyectos-contenedor {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Esta propiedad es clave para que los proyectos pasen a la siguiente línea si no caben */
+}
+
+.proyecto {
+    width: 300px;
+    margin: 15px;
+    text-align: center;
 }
