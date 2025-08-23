@@ -34,6 +34,11 @@ p {
     font-weight: 700;
 }
 
+.titulo-principal:hover {
+    color: #d11241;
+    transition: color 0.3s ease;
+}
+
 p, li {
     font-size: 1rem;
     font-weight: 400;
