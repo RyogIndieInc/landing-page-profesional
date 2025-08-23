@@ -10,6 +10,12 @@ header {
     padding: 20px;
 }
 
+.contenedor-principal {
+    max-width: 960px; /* Limita el ancho del contenido a 960px */
+    margin: auto;     /* Centra el contenedor horizontalmente */
+    padding: 0 20px;  /* Añade espacio a los lados para que el contenido no se pegue a los bordes de la pantalla en móviles */
+}
+
 h1 {
     color: #333;
 }
