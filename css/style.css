@@ -70,3 +70,17 @@ p, li {
         align-items: center; /* Centra los elementos */
     }
 }
+
+#scroll-to-top {
+    position: fixed; /* Mantiene el botón fijo en la pantalla */
+    bottom: 20px; /* Distancia desde el borde inferior */
+    right: 20px; /* Distancia desde el borde derecho */
+    display: none; /* Por defecto, el botón estará oculto */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1f4287;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+}
