@@ -1,6 +1,8 @@
+/* Estilos para pantallas más grandes (el default) */
 body {
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
+    font-size: 16px;
 }
 
 header {
@@ -38,6 +40,13 @@ p, li {
     line-height: 1.6;
 }
 
+/* Estilos para pantallas más grandes, la lista se muestra como una fila */
+.lista-habilidades {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Para añadir espacio entre los elementos */
+}
+
 .proyectos-contenedor {
     display: flex;
     justify-content: center;
@@ -48,4 +57,16 @@ p, li {
     width: 300px;
     margin: 15px;
     text-align: center;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    /* Estilos para pantallas de 600px o menos, la lista se muestra como una columna */
+    .lista-habilidades {
+        flex-direction: column; /* Cambia el eje principal a vertical */
+        align-items: center; /* Centra los elementos */
+    }
 }
