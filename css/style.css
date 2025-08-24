@@ -49,9 +49,10 @@ p, li {
 }
 
 .proyectos-contenedor {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Esta propiedad es clave para que los proyectos pasen a la siguiente línea si no caben */
+    display: grid; /* Convertimos el contenedor en una cuadrícula */
+    grid-template-columns: repeat(3, 1fr); /* Creamos 3 columnas de igual tamaño */
+    gap: 20px; /* Agregamos espacio entre las tarjetas */
+    margin: auto;
 }
 
 .proyecto {
